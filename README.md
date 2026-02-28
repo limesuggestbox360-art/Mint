@@ -1,30 +1,24 @@
----How to use Mint---
+## 0. Extension
 
-Step 1: Run Setup.bat as administrator
-Step 2: To use Console click on mint.py
-Step 3: To use IDLE, first install the extension
+	Step 1: Go to https://github.com/limesuggestbox360-art/Mint
+	Step 2: Click on <>Code
+	Step 3: Download ZIP
+	Step 4: Extract ZIP
+	Step 5: Open VSCODE
+	Step 6: Open the Extensions view
+	Step 7: Click on the three dots
+	Step 8: Select Install from VSIX.
+	Step 9: Select the extracted folder
+	Step 10: Create a new file
+	Step 11: Write your code
+	Step 12: Run it
+	
+	if you guys think this is a virus, check the code its not malware.
+	
+	Create a .mint file and set it to open with Python.exe
+	Run the mint.py file to start!
 
-0. Extension
-
-Step 1: Go to https://github.com/limesuggestbox360-art/Mint
-Step 2: Click on <>Code
-Step 3: Download ZIP
-Step 4: Extract ZIP
-Step 5: Open VSCODE
-Step 6: Open the Extensions view
-Step 7: Click on the three dots
-Step 8: Select Install from VSIX.
-Step 9: Select the extracted folder
-Step 10: Create a new file
-Step 11: Write your code
-Step 12: Run it
-
-if you guys think this is a virus, check the code its not malware.
-
-Create a .mint file and set it to open with Python.exe
-Run the mint.py file to start!
-
-1. Basics
+## 1. Basics
 
     write() --> Prints "hello" in console
     a = 100 --> Creates new Var
@@ -33,18 +27,18 @@ Run the mint.py file to start!
     calc(mathequation) --> does complex math equation
     exit --> Exits console
 
-2. Logic
+## 2. Logic
 
     if(condition, code) --> Execute something on matching condition(s)
     repeat(times, code) --> Execute something by times
     while(condition, code) --> Execute something forever until the matching condition(s) are false
 
-3. Func
+## 3. Func
 
     func name {code; code} --> Creates a new func with name "name" which does 2 cmds (code; code)
     call name --> Calls the func
 
-4. Media
+## 4. Media
 
     img(imagefile.format) --> Creates a new image on the console
     sound(soundfile.format) --> Plays a sound 
@@ -55,7 +49,7 @@ Run the mint.py file to start!
     vseek(ms) --> Seeks to ms of video
     vlength() --> Gets the length of the video
  
-5. Website Automation
+## 5. Website Automation
 
     browser(browser) --> Opens a new browser
     website(website) --> Opens a new website
@@ -64,7 +58,7 @@ Run the mint.py file to start!
     clink(link) --> Click on a link
     browser.quit() --> Close browser
 
-6. File
+## 6. File
 
     save(file.format) --> Saves to a file
     load(file.format) --> Loads in all vars and functions
@@ -72,7 +66,7 @@ Run the mint.py file to start!
     locate(filedirectory, action) --> does an action on a file (best used when file is outside mint folder)
     file(filedirectory) --> Run any type of file that your computer supports
 
-7. Developer API 
+## 7. Developer API 
 
     py(pythoncode1; pythoncode2; pythoncode3; etc...) --> Runs python commands
     
