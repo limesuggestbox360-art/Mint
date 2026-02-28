@@ -1,0 +1,28 @@
+{
+  "name": "Mint",
+  "scopeName": "source.mint",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#keywords" },
+    { "include": "#strings" },
+    { "include": "#variables" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [{ "match": "#.*$", "name": "comment.line.number-sign.mint" }]
+    },
+    "keywords": {
+      "patterns": [
+        { "match": "\\b(if|while|repeat|func|call|run|load|locate|wait|py)\\b", "name": "keyword.control.mint" },
+        { "match": "\\b(browser|website|click|clink|type|write|calc)\\b", "name": "support.function.mint" },
+        { "match": "\\b(sys|img|image|video|vid|sound|playsound)\\b", "name": "variable.other.mint" }
+      ]
+    },
+    "strings": {
+      "patterns": [{ "begin": "['\"]", "end": "['\"]", "name": "string.quoted.mint" }]
+    },
+    "variables": {
+      "patterns": [{ "match": "@[a-zA-Z_][a-zA-Z0-9_]*", "name": "variable.other.mint" }]
+    }
+  }
+}

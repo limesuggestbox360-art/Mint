@@ -1,0 +1,25 @@
+{
+  "Mint If Statement": {
+    "prefix": "if",
+    "body": [
+      "if(@${1:variable} == ${2:value}, ${3:task})"
+    ],
+    "description": "Custom Mint If Logic"
+  },
+  "Mint Function": {
+    "prefix": "func",
+    "body": [
+      "func ${1:name} {",
+      "  ${2:code}",
+      "}"
+    ],
+    "description": "Create a new function"
+  },
+  "Mint Browser": {
+    "prefix": "browser",
+    "body": [
+      "browser(${1:chrome})"
+    ],
+    "description": "Open a browser window"
+  }
+}

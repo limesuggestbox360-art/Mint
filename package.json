@@ -1,0 +1,68 @@
+{
+  "name": "mint-lang",
+  "displayName": "Mint",
+  "description": "Mint Language Support",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "icon": "Mint.png",
+  "main": "./extension.js",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "activationEvents": [
+    "onLanguage:mint"
+  ],
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "mint",
+        "aliases": ["Mint", "mint"],
+        "extensions": [".mint"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "mint",
+        "scopeName": "source.mint",
+        "path": "./syntaxes/mint.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "mint",
+        "path": "./snippets/mint.code-snippets"
+      }
+    ],
+    "commands": [
+      {
+        "command": "mint-lang.runMint",
+        "title": "Run Mint File",
+        "icon": "$(play)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "mint-lang.runMint",
+          "group": "navigation",
+          "when": "resourceExtname == .mint"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Mint",
+      "properties": {
+        "mint.path": {
+          "type": "string",
+          "default": "",
+          "description": "The full path to your mint.py file."
+        }
+      }
+    }
+  }
+}
