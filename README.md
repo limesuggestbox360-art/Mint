@@ -18,7 +18,20 @@ MediaSupport
 
 ## Usage
 
+Go to your VSCODE settings and click on Extensions Locate Mint and set the Mint path to your mint.py path
+NOTE: It is recommended to put all mint releases in one release folder, and give a folder for each new mint
+release and its mint-lang(extension)
+
+e.g.-
+
+Releases\v1.0.0
+Mint
+mint-lang
+
 Open any file with .mint at the end
 Type "@" for variables
 Type "#" for comments
 
+If there is an Update, go to https://github.com/limesuggestbox360-art/Mint and download both the new release and install the new extension by 
+clicking on <>code, and download the ZIP, extract it and go to VSCODE; Open Extensions and click on the three dots and install VSIX
+Select the extracted folder.
