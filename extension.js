@@ -23,10 +23,15 @@ function activate(context) {
             return;
         }
 
+        await editor.document.save();
+        
         const terminal = vscode.window.activeTerminal || vscode.window.createTerminal("Mint");
         terminal.show();
         terminal.sendText(`python "${mintPath}" "${editor.document.fileName}"`);
+        
     });
 
     context.subscriptions.push(disposable);
 }
+
+exports.activate = activate;

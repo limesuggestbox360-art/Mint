@@ -2,17 +2,17 @@
   "name": "mint-lang",
   "displayName": "Mint",
   "description": "Mint Language Support",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "private": true,
   "icon": "Mint.png",
-  "main": "./extension.js",
   "engines": {
     "vscode": "^1.75.0"
   },
   "activationEvents": [
     "onLanguage:mint"
   ],
+  "main": "./extension.js",
   "categories": [
     "Programming Languages"
   ],
