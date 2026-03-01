@@ -43,7 +43,7 @@ Run the mint.py file to start!
 
 ## Func
 
-    func name {code; code} --> Creates a new func with name "name" which does 2 cmds (code; code)
+    func name (argument) {code; code} --> Creates a new func with name "name" and with 2 vals 'argument, code'
     call name --> Calls the func
 
 ## Media
@@ -65,7 +65,23 @@ Run the mint.py file to start!
     type(bytype, item, wait_time, text) --> Enter text in a input
     clink(link) --> Click on a link
     browser.quit() --> Close browser
+    
+## UI & Turt Design
 
+### Turt
+	turt() --> Open a new Turtle window
+	turt(circ, radius) --> Creates a new circle with the provided 'radius'
+	turt(pup) --> Pen up
+	turt(pdown) --> Pen down
+	turt(pensize, size) --> Pen size
+	turt(color, value) --> Changes Pen color by the provided 'value'
+	turt(direction, degree) --> Moves towards the direction by the provided 'degree'
+	turt(clear) --> Clears the screen
+	turt(reset) --> Resets the window
+	turt(move, cord) --> Moves to the provided 'cord'
+	turt(head, cord) --> Moves head to the provided 'cord'
+	turt(speed, value) --> Sets the speed by the provided 'value'
+    
 ## File
 
     save(file.format) --> Saves to a file
@@ -102,6 +118,38 @@ Run the mint.py file to start!
     pip install module1 module2 modulename
 
     if you want to make console invis, remove "pause" inside mod.bat
+
+### MultiLine
+
+    Multiline is usually part of a tag 
+    The shell reads the entire line, splits it by the semicolon, and runs each part one by one.
+
+    To make multiline () codes follow this structure
+
+    elif tag == "command":
+        # 1. Split the logic from the commands
+        parts = val.split(",", 1) 
+        
+        # 2. Extract the commands (separated by ;)
+        commands = parts[1].split(";")
+        
+        # 3. Loop and run each command 
+        for cmd in commands:
+            #Code
+
+### Blocktype
+
+    Uses braces { } or a dedicated block() tag to hold code.
+    It allows you to pass a long list of instructions into a function or a logic gate as if it were just one argument.
+
+    To make block {} codes follow this structure
+
+    elif tag == "block":
+    # Syntax: block(write(Hello); write(World); playsound(pop.mp3))
+    
+        for statement in val.split(";"):
+            #Code
+    return
 	
 # Updates(Contributers & Commiters Only)
 
