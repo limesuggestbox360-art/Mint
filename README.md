@@ -92,6 +92,13 @@ Run the mint.py file to start!
 
  # Developer API 
 
+### Notes:
+
+    [1] --> Anything after ...
+    [0] --> Anything before ...
+    split --> Split 2 or more ...
+    strip --> Strip 2 or more ...
+
     py(pythoncode1; pythoncode2; pythoncode3; etc...) --> Runs python commands
     
     To create a new command, open mint.py through a IDLE (Python IDLE or VSCODE)
