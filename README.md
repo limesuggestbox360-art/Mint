@@ -66,7 +66,7 @@ Run the mint.py file to start!
     clink(link) --> Click on a link
     browser.quit() --> Close browser
     
-## UI & Turt Design
+## Other(Modules) 
 
 ### Turt
 	turt() --> Open a new Turtle window
@@ -81,6 +81,14 @@ Run the mint.py file to start!
 	turt(move, cord) --> Moves to the provided 'cord'
 	turt(head, cord) --> Moves head to the provided 'cord'
 	turt(speed, value) --> Sets the speed by the provided 'value'
+
+### Date
+    date(micro) --> Prints the exact time down to microseconds
+    date(formatted) --> Prints the date of today (YYYY, MM, DD)
+    date(hour) --> Prints the exact hour (24-hour)
+    date(minute) --> Prints the exact minute (0-59)
+    date(second) --> Prints the exact second (0-59)
+    date(microsecond) --> Prints the exact microtime
     
 ## File
 
